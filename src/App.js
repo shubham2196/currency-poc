@@ -14,7 +14,6 @@ function App() {
       <ConnectedRouter history={history}>
         <HashRouter>
           <Switch>
-            {/* <Link to="/login" action="REPLACE">Click here to login </Link> */}
             {route()}
           </Switch>
         </HashRouter>

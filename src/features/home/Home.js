@@ -14,7 +14,7 @@ import {
 import { Col, Container, Row } from "react-bootstrap";
 import Chart from "react-google-charts";
 
-class Login extends Component {
+class Home extends Component {
   componentDidMount() {
     this.props.dispatchCurrencyRequest();
   }
@@ -105,4 +105,4 @@ const mapDispatchToProps = {
   dispatchSetSelectedCountry: setSelectedCountryAction,
   dispatchCurrencyChartRequest: fetchCurrentPriceChartAction,
 };
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
